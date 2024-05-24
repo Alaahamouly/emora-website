@@ -3,6 +3,7 @@
   --secondary-color: #a38350;
   --white-color: #ffffff;
   --gray-color: #5c5e5e;
+  --light-gray-color: #faf8f5;
 }
 
 @font-face {
@@ -191,8 +192,8 @@
 .explore {
   padding: 2.5rem 5vw;
   background-image: url("../images/explore-bg.svg");
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
 }
 
 .explore .title h1 {
@@ -207,7 +208,6 @@
 .explore .content a {
   text-decoration: none;
 }
-
 
 .explore .content .card {
   background: transparent;
@@ -246,6 +246,24 @@
 }
 
 /* End Explore*/
+
+/* Start Description */
+.description {
+  background: var(--light-gray-color);
+}
+
+.description .img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.description .content {
+  padding: 8vw 5vw;
+}
+
+/* End Description */
 
 /*medium screen*/
 @media (max-width: 1400px) {
@@ -300,11 +318,13 @@
     margin-top: 1.5rem;
   }
 
-  .about .content p {
+  .about .content p,
+  .description .content h4 {
     font-size: 1.4rem;
   }
 
-  .explore .title h1 {
+  .explore .title h1,
+  .description .content h1 {
     font-size: 3rem;
   }
 }
@@ -327,11 +347,13 @@
     font-size: 2rem;
   }
 
-  .about .content p {
+  .about .content p,
+  .description .content h4  {
     font-size: 1.1rem;
   }
 
-  .explore .title h1 {
+  .explore .title h1,
+  .description .content h1  {
     font-size: 2rem;
   }
 }
