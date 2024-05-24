@@ -2,6 +2,7 @@
   --primary-color: #35363a;
   --secondary-color: #a38350;
   --white-color: #ffffff;
+  --gray-color: #5c5e5e;
 }
 
 @font-face {
@@ -186,6 +187,66 @@
 }
 /* End About */
 
+/* Start Explore*/
+.explore {
+  padding: 2.5rem 5vw;
+  background-image: url("../images/explore-bg.svg");
+  background-size: cover; 
+  background-position: center; 
+}
+
+.explore .title h1 {
+  font-size: 4.5rem;
+}
+
+.explore .content {
+  padding: 0 7vw;
+  margin-top: 5rem;
+}
+
+.explore .content a {
+  text-decoration: none;
+}
+
+
+.explore .content .card {
+  background: transparent;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.explore .content .card:hover {
+  background: var(--white-color);
+}
+
+.explore .content .card .card-img-top {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.explore .content .card .card-title {
+  color: var(--primary-color);
+}
+
+.explore .content .card .card-text {
+  color: var(--gray-color);
+}
+
+.explore .content .card .arrow-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.explore .content .card:hover .arrow-img {
+  opacity: 1;
+}
+
+/* End Explore*/
+
 /*medium screen*/
 @media (max-width: 1400px) {
 }
@@ -242,6 +303,10 @@
   .about .content p {
     font-size: 1.4rem;
   }
+
+  .explore .title h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -264,5 +329,9 @@
 
   .about .content p {
     font-size: 1.1rem;
+  }
+
+  .explore .title h1 {
+    font-size: 2rem;
   }
 }
