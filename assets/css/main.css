@@ -267,7 +267,10 @@
 
 /* Start Team */
 .team {
-  padding: 2.5rem 5vw;
+  padding: 2.5rem 5vw 8rem;
+  background-image: url("../images/team-bg.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .team .title {
@@ -306,8 +309,115 @@
 }
 /* End Team */
 
+/* Start Expert */
+.expert {
+  background-image: url("../images/expert-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 123vh;
+  position: relative;
+}
+
+.expert .title {
+  position: absolute;
+  right: 10vw;
+  top: -3.4vw;
+}
+
+.expert .title h1 {
+  font-size: 4.5rem;
+}
+
+.expert .content {
+  position: absolute;
+  bottom: 5vw;
+  right: 15vw;
+}
+
+.expert .content p {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.expert .content a {
+  text-decoration: none;
+}
+/* End Expert */
+
+/* Start Footer */
+.footer {
+  padding: 3rem 0 0 5vw;
+  background: var(--primary-color);
+}
+
+.footer h3 {
+  color: var(--white-color);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .contact-links {
+  border-top: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  border-top-left-radius: 40px;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .contact-links h6 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.footer .contact-links a.mail-phone {
+  color: var(--white-color);
+}
+.footer .copyright {
+  color: var(--white-color);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+/* End Footer */
+
 /*medium screen*/
-@media (max-width: 1400px) {
+@media (max-width: 1735px) {
+  .expert .content {
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+  }
+}
+@media (max-width: 1460px) {
+  .expert {
+    height: 100vh;
+  }
+  .expert .title h1 {
+    font-size: 3.5rem;
+  }
+
+  .expert .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .expert {
+    height: 90vh;
+  }
+  .expert .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .expert .content p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -336,6 +446,25 @@
     display: flex;
     justify-content: center;
     margin: 1.5rem 0;
+  }
+
+  .expert {
+    height: 66vh;
+  }
+  .footer h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer .mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer .mobile-copywrite {
+    margin-top: 2rem;
   }
 }
 
@@ -368,6 +497,27 @@
   .description .content h1 {
     font-size: 3rem;
   }
+
+  .expert {
+    height: 54vh;
+  }
+
+  .expert .title {
+    right: 2vw;
+    top: -8vh;
+  }
+
+  .expert .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .expert .content {
+    bottom: 2vh;
+  }
+
+  .expert .content p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -398,5 +548,36 @@
   .explore .title h1,
   .description .content h1 {
     font-size: 2rem;
+  }
+
+  .team {
+    padding-bottom: 2rem;
+  }
+
+  .expert {
+    height: 40vh;
+    background-image: url("../images/team-bg.svg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .expert .title {
+    left: 5vw;
+    right: unset;
+    top: 0;
+  }
+
+  .expert .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .expert .content {
+    bottom: 2vh;
+    left: 5vw;
+  }
+
+  .expert .content p {
+    font-size: 1rem;
+    color: var(--secondary-color);
   }
 }
