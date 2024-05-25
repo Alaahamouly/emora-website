@@ -386,6 +386,58 @@
 }
 /* End Footer */
 
+/* Start Booking */
+.booking {
+  background: var(--light-gray-color);
+}
+
+.booking .img-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.booking .img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.booking .form-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking .form-holder .form-container {
+  width: 30vw;
+  background: var(--white-color);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.booking .form-holder .form-container h3 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.booking .form-holder .form-container label {
+  font-weight: bold;
+}
+
+.booking .form-holder .form-container input,
+.booking .form-holder .form-container select {
+  background: var(--light-gray-color);
+}
+
+.booking .form-holder .form-container .btn-submit {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+}
+/* End Booking */
+
 /*medium screen*/
 @media (max-width: 1735px) {
   .expert .content {
