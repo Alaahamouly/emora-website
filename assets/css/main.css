@@ -408,13 +408,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%; /* Ensure the holder takes the full height of its parent */
+  padding: 30vh 5vw; /* Optional: Add padding for better spacing */
 }
 
 .booking .form-holder .form-container {
-  width: 30vw;
-  background: var(--white-color);
-  padding: 3rem;
-  border-radius: 8px;
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px; /* Set a max-width for better responsiveness */
+  background-color: #fff; /* Optional: Add background color */
+  padding: 3rem; /* Add padding inside the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
 }
 
 .booking .form-holder .form-container h3 {
