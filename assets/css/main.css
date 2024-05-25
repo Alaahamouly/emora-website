@@ -265,6 +265,47 @@
 
 /* End Description */
 
+/* Start Team */
+.team {
+  padding: 2.5rem 5vw;
+}
+
+.team .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team .title h4 {
+  color: var(--secondary-color);
+}
+
+.team .title h1 {
+  color: var(--primary-color);
+}
+
+.team .team-member-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .team-member-container .team-member {
+  text-align: center;
+}
+
+.team .team-member-container .team-member h2 {
+  color: var(--primary-color);
+}
+
+.team .team-member-container .team-member p {
+  color: var(--secondary-color);
+}
+/* End Team */
+
 /*medium screen*/
 @media (max-width: 1400px) {
 }
@@ -339,21 +380,23 @@
     display: none;
   }
 
-  .about .title h4 {
+  .about .title h4,
+  .team .title h4 {
     font-size: 1.5rem;
   }
 
-  .about .title h1 {
+  .about .title h1,
+  .team .title h1 {
     font-size: 2rem;
   }
 
   .about .content p,
-  .description .content h4  {
+  .description .content h4 {
     font-size: 1.1rem;
   }
 
   .explore .title h1,
-  .description .content h1  {
+  .description .content h1 {
     font-size: 2rem;
   }
 }
