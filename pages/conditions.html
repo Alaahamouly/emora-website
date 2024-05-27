@@ -19,7 +19,9 @@
   <body>
     <!-- Start Header -->
     <div id="home" class="header">
-      <img class="logo" src="../assets/images/logo.svg" />
+      <a href="/">
+        <img class="logo" src="../assets/images/logo.svg" />
+      </a>
       <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <button
@@ -33,23 +35,46 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav px-0 py-0">
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">About</a>
+                <a class="nav-link" href="../#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">Our Team</a>
+                <a class="nav-link" href="../#team">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">Treatment</a>
+                <a class="nav-link" href="treatment.html">Treatment</a>
+                <div class="submenu">
+                  <ul class="submenu-left">
+                    <li class="submenu-item" data-target="face">Face</li>
+                    <li class="submenu-item" data-target="body">Body</li>
+                    <li class="submenu-item" data-target="skin">Skin</li>
+                    <li class="submenu-item" data-target="men">Men</li>
+                  </ul>
+                  <div class="submenu-right" id="submenu-right">
+                    <!-- Content will be populated by JavaScript -->
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">Conditions</a>
+                <a class="nav-link" href="conditions.html">Conditions</a>
+                <div class="submenu-cond">
+                  <ul class="submenu-left-cond">
+                    <li class="submenu-item-cond" data-target="face">Face</li>
+                    <li class="submenu-item-cond" data-target="body">Body</li>
+                    <li class="submenu-item-cond" data-target="skin">Skin</li>
+                  </ul>
+                  <div class="submenu-right-cond" id="submenu-right-cond">
+                    <!-- Content will be populated by JavaScript -->
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">Plastic Surgery</a>
+                <a class="nav-link" href="../#explore">Plastic Surgery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
               </li>
             </ul>
             <div class="nav-actions-container">
@@ -270,5 +295,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/index-inside-pages.js"></script>
   </body>
 </html>

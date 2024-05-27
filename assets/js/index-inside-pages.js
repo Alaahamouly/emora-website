@@ -4,47 +4,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const content = {
     face: [
-      { text: "DERMAL FILLERS", link: "pages/treatment.html" },
-      { text: "LIP FILLERS", link: "pages/treatment.html" },
+      { text: "DERMAL FILLERS", link: "treatment.html" },
+      { text: "LIP FILLERS", link: "treatment.html" },
       {
         text: "NON-SURGICAL RHINOPLASTY",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
-      { text: "BOTOX", link: "pages/treatment.html" },
-      { text: "UNDEREYE FILLERS", link: "pages/treatment.html" },
+      { text: "BOTOX", link: "treatment.html" },
+      { text: "UNDEREYE FILLERS", link: "treatment.html" },
       {
         text: "JAWLINE & CHIN FILLERS EYEBROW LIFT",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
-      { text: "THREAD LIFT", link: "pages/treatment.html" },
-      { text: "SKIN BOOSTER", link: "pages/treatment.html" },
-      { text: "PROFHILO", link: "pages/treatment.html" },
-      { text: "SCULPTRA", link: "pages/treatment.html" },
+      { text: "THREAD LIFT", link: "treatment.html" },
+      { text: "SKIN BOOSTER", link: "treatment.html" },
+      { text: "PROFHILO", link: "treatment.html" },
+      { text: "SCULPTRA", link: "treatment.html" },
     ],
     body: [
-      { text: "BUTT FILLERS", link: "pages/treatment.html" },
+      { text: "BUTT FILLERS", link: "treatment.html" },
       {
         text: "LASER HAIR REMOVAL",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
     ],
     skin: [
       {
         text: "DEEP CLEANSING FACIAL",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
       {
         text: "PLATELET RICH PLASMA  SECRET FRACTIONAL RF",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
       {
         text: " HAIR LOSS TREATMENT  DERMAPEN",
-        link: "pages/treatment.html",
+        link: "treatment.html",
       },
-      { text: "MICRONEEDLIN", link: "pages/treatment.html" },
-      { text: "EMATRIX", link: "pages/treatment.html" },
+      { text: "MICRONEEDLIN", link: "treatment.html" },
+      { text: "EMATRIX", link: "treatment.html" },
     ],
-    men: [{ text: "WRINKLES & LINES TREATMENT", link: "pages/treatment.html" }],
+    men: [{ text: "WRINKLES & LINES TREATMENT", link: "treatment.html" }],
   };
 
   submenuItems.forEach((item) => {
@@ -80,15 +80,15 @@ document.addEventListener("DOMContentLoaded", function () {
         text: "ACNE",
         link: "pages/conditions.html",
       },
-      { text: " ACNE SCARS", link: "pages/conditions.html" },
-      { text: "WRINKLES", link: "pages/conditions.html" },
-      { text: "BOTOX", link: "pages/conditions.html" },
-      { text: "DARK CIRCLES UNDER EYES", link: "pages/conditions.html" },
+      { text: " ACNE SCARS", link: "conditions.html" },
+      { text: "WRINKLES", link: "conditions.html" },
+      { text: "BOTOX", link: "conditions.html" },
+      { text: "DARK CIRCLES UNDER EYES", link: "conditions.html" },
     ],
-    body: [{ text: " UNDERARM SWEATING", link: "pages/conditions.html" }],
+    body: [{ text: " UNDERARM SWEATING", link: "conditions.html" }],
     skin: [
-      { text: "ACNE", link: "pages/conditions.html" },
-      { text: "ACNE SCARS", link: "pages/conditions.html" },
+      { text: "ACNE", link: "conditions.html" },
+      { text: "ACNE SCARS", link: "conditions.html" },
     ],
   };
 
