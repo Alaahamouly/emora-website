@@ -44,7 +44,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- Start Header -->
     <div id="home" class="header">
-      <img class="logo" src="assets/images/logo.svg" />
+      <img class="logo" src="../assets/images/logo.svg" />
       <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <button
@@ -58,30 +58,50 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav px-0 py-0">
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="/index.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#team">Our Team</a>
+                <a class="nav-link" href="/index.html">Our Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="pages/treatment.html">Treatment</a>
+                <div class="submenu">
+                  <ul class="submenu-left">
+                    <li class="submenu-item" data-target="face">Face</li>
+                    <li class="submenu-item" data-target="body">Body</li>
+                    <li class="submenu-item" data-target="skin">Skin</li>
+                    <li class="submenu-item" data-target="men">Men</li>
+                  </ul>
+                  <div class="submenu-right" id="submenu-right">
+                    <!-- Content will be populated by JavaScript -->
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#explore">Conditions</a>
+                <a class="nav-link" href="pages/conditions.html">Conditions</a>
+                <div class="submenu-cond">
+                  <ul class="submenu-left-cond">
+                    <li class="submenu-item-cond" data-target="face">Face</li>
+                    <li class="submenu-item-cond" data-target="body">Body</li>
+                    <li class="submenu-item-cond" data-target="skin">Skin</li>
+                  </ul>
+                  <div class="submenu-right-cond" id="submenu-right-cond">
+                    <!-- Content will be populated by JavaScript -->
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#explore">Plastic Surgery</a>
+                <a class="nav-link" href="/index.html">Plastic Surgery</a>
               </li>
             </ul>
             <div class="nav-actions-container">
               <a href="tel:+971 52 423 2000">
                 <div class="out-line-btn">+971 52 423 2000</div>
               </a>
-              <a href="pages/booking.html">
+              <a href="#">
                 <div class="full-primary-btn">APPOINTMENT</div>
               </a>
             </div>
@@ -391,7 +411,11 @@
                 </div>
               </div>
             </div>
-            <div class="row mx-0"><p class="copyright mobile-copywrite">© 2024 — Ain Media Production</p></div>
+            <div class="row mx-0">
+              <p class="copyright mobile-copywrite">
+                © 2024 — Ain Media Production
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -401,5 +425,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
