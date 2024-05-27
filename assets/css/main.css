@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --gray-color: #5c5e5e;
   --light-gray-color: #faf8f5;
+  --light-bg-color: #f6efe6;
 }
 
 @font-face {
@@ -408,17 +409,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure the holder takes the full height of its parent */
-  padding: 30vh 5vw; /* Optional: Add padding for better spacing */
+  height: 100%;
+  padding: 30vh 5vw;
 }
 
 .booking .form-holder .form-container {
-  width: 100%; /* Adjust width as needed */
-  max-width: 500px; /* Set a max-width for better responsiveness */
-  background-color: #fff; /* Optional: Add background color */
-  padding: 3rem; /* Add padding inside the container */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white-color);
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .booking .form-holder .form-container h3 {
@@ -441,6 +442,133 @@
   border: none;
 }
 /* End Booking */
+
+/* Start Treatment */
+
+.treatment {
+  background: var(--light-bg-color);
+  padding-top: 3rem;
+}
+
+.treatment .title {
+  padding: 0 0 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.treatment .title h4 {
+  color: var(--primary-color);
+}
+
+.treatment .title h2 {
+  color: var(--secondary-color);
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.treatment .title p {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* End Treatment */
+
+/* Start Book Treatment Section */
+.book-treatment {
+  height: 40vh;
+  background-image: url("../images/book-treatment-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book-treatment .content {
+  margin: 12% 0 0 8%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-treatment .content h2 {
+  color: var(--white-color);
+}
+
+.book-treatment .content a {
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.book-treatment .content .book-treatment-btn {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  width: fit-content;
+  border-radius: 14px;
+  padding: 0.8rem 3rem;
+}
+
+.book-treatmeent-img-container img {
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* End Book Treatment Section */
+
+/* Start tabs sections */
+.emora-tabs {
+  width: 100%;
+  padding: 0 10vw 2rem;
+}
+.emora-tabs .nav-tabs {
+  border-bottom: 3px solid var(--secondary-color) !important;
+  width: 100;
+}
+
+.emora-tabs .nav-item {
+  width: 25%;
+}
+
+.emora-tabs .nav {
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.emora-tabs .nav-link {
+  text-align: center;
+  color: var(--secondary-color) !important;
+}
+
+.emora-tabs .nav-link.active {
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: transparent !important;
+}
+
+.emora-tabs .tabs-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.emora-tabs .tabs-features-list {
+  margin-top: 2rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+.emora-tabs .tabs-features-list li {
+  margin: 1rem 0;
+}
+/* End tabs sections */
 
 /*medium screen*/
 @media (max-width: 1735px) {
