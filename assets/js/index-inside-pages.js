@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     face: [
       {
         text: "ACNE",
-        link: "pages/conditions.html",
+        link: "conditions.html",
       },
       { text: " ACNE SCARS", link: "conditions.html" },
       { text: "WRINKLES", link: "conditions.html" },
