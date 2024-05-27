@@ -496,11 +496,19 @@
 
 /* Start Book Treatment Section */
 .book-treatment {
-  height: 40vh;
+  /* height: 50vh; */
   background-image: url("../images/book-treatment-bg.svg");
   background-size: cover;
   background-position: center;
+  /* position: relative;
+  overflow: hidden; */
 }
+
+/* .book-treatment-effect {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
 
 .contact-bg {
   background: transparent;
@@ -529,13 +537,15 @@ z-index: 15;
 
 .content-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .book-treatment .content {
-  margin: 12% 0 0 8%;
+  margin: 12% 0;
   align-items: center;
+  /* justify-content: flex-end; */
   display: flex;
   flex-direction: column;
 }
@@ -557,11 +567,17 @@ z-index: 15;
   padding: 0.8rem 3rem;
 }
 
+.book-treatmeent-img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .book-treatmeent-img-container img {
   width: auto;
   height: auto;
   display: block;
   object-fit: cover;
+  margin-top: -2rem;
 }
 /* End Book Treatment Section */
 
