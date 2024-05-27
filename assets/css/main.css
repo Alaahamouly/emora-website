@@ -413,7 +413,8 @@
   padding: 30vh 5vw;
 }
 
-.booking .form-holder .form-container {
+.booking .form-holder .form-container,
+.form-container {
   width: 100%;
   max-width: 500px;
   background-color: var(--white-color);
@@ -427,16 +428,20 @@
   margin-bottom: 2rem;
 }
 
-.booking .form-holder .form-container label {
+.booking .form-holder .form-container label,
+.form-container label {
   font-weight: bold;
 }
 
 .booking .form-holder .form-container input,
-.booking .form-holder .form-container select {
+.booking .form-holder .form-container select,
+.form-container input,
+.form-container select {
   background: var(--light-gray-color);
 }
 
-.booking .form-holder .form-container .btn-submit {
+.booking .form-holder .form-container .btn-submit,
+.form-container .btn-submit {
   background: var(--secondary-color);
   color: var(--white-color);
   border: none;
@@ -457,6 +462,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .treatment .title h4 {
@@ -469,9 +475,21 @@
   font-size: 3rem;
 }
 
+.treatment .title h5 {
+  color: var(--secondary-color);
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
 .treatment .title p {
   color: var(--primary-color);
   text-align: center;
+}
+
+.treatment .title p.booking-subtitle {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /* End Treatment */
@@ -482,6 +500,31 @@
   background-image: url("../images/book-treatment-bg.svg");
   background-size: cover;
   background-position: center;
+}
+
+.contact-bg {
+  background: transparent;
+  background-image: url("../images/contact-bg.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.effect-one, .effect-two {
+  position: absolute;
+  top: 4%;
+  right: 0;
+}
+
+.effect-one {
+z-index: 15;
+}
+
+.effect-three {
+  position: absolute;
+  left: 0;
+  top: 25%;
 }
 
 .content-container {
@@ -569,6 +612,37 @@
   margin: 1rem 0;
 }
 /* End tabs sections */
+
+/* Start Contact Us */
+.contact {
+  padding: 0 5vw;
+}
+
+.contact .contact-icon {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(12%) saturate(6942%)
+    hue-rotate(19deg) brightness(90%) contrast(64%);
+}
+
+.contact a {
+  color: var(--primary-color);
+}
+
+.contact .contact-title {
+  color: var(--secondary-color);
+  margin-top: 3rem;
+}
+
+.contact .contact-subtitle {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+.map-container {
+  width: 100%;
+  height: 70vh;
+  margin: 20px 0 0;
+  opacity: 0.7;
+}
+/* End Contact Us */
 
 /*medium screen*/
 @media (max-width: 1735px) {
